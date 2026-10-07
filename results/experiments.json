@@ -1,0 +1,44 @@
+{
+  "n_train": 16000,
+  "n_test": 4000,
+  "note": "synthetic data; problem_id ground truth is generator-defined",
+  "category": {
+    "majority": {
+      "accuracy": 0.16825
+    },
+    "naive_bayes": {
+      "accuracy": 0.97625,
+      "macro_f1": 0.9761759761778283
+    },
+    "softmax": {
+      "accuracy": 0.97025,
+      "macro_f1": 0.9700432685007507
+    }
+  },
+  "priority": {
+    "majority": {
+      "accuracy": 0.417
+    },
+    "naive_bayes": {
+      "accuracy": 0.7525,
+      "macro_f1": 0.7304707971670603
+    },
+    "softmax": {
+      "accuracy": 0.736,
+      "macro_f1": 0.7159070493830343
+    }
+  },
+  "retrieval": {
+    "sparse_exact": {
+      "hit@10": 0.913,
+      "mrr": 0.8044513888888889,
+      "hit@1": 0.746
+    },
+    "lsh": {
+      "hit@10": 0.91125,
+      "mrr": 0.8034563492063491,
+      "hit@1": 0.7475
+    },
+    "random_hit@10": 0.0305
+  }
+}

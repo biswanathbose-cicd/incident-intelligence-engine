@@ -1,0 +1,43 @@
+{
+  "python": "3.13.16",
+  "machine": "x86_64",
+  "vectorize_12k_docs_s": {
+    "reference_pure_python": 0.2512374220000311,
+    "sparse_fit_then_transform(tokenizes twice)": 0.21018670199998724,
+    "sparse_fit_transform(tokenizes once)": 0.13544331399998555,
+    "sklearn": 0.1744124860000511
+  },
+  "topk_k10_s": {
+    "10000": {
+      "sort": 0.00014078599997446872,
+      "heap": 0.0004221840000582233,
+      "partition": 2.791400004298339e-05
+    },
+    "100000": {
+      "sort": 0.0017817399999557892,
+      "heap": 0.004455699000004643,
+      "partition": 0.00020520699990811408
+    },
+    "1000000": {
+      "sort": 0.022653794999996535,
+      "partition": 0.0014397929999176995
+    }
+  },
+  "search_500_queries_11k_docs": {
+    "sparse_exact_s": 0.08251816800009237,
+    "lsh_6x16_s": 0.5295827280000367,
+    "lsh_score_ratio": 0.9639194247030215,
+    "lsh_overlap": 0.768,
+    "lsh_candidate_fraction": 0.24821836363636363,
+    "reference_ms_per_query_1k_docs": 1.204418650002026,
+    "sparse_exact_ms_per_query_11k_docs": 0.16503633600018475
+  },
+  "peak_memory_500q_11k_docs": {
+    "block_budget_256MiB": {
+      "peak_MiB": 87.55149459838867
+    },
+    "block_budget_4MiB": {
+      "peak_MiB": 12.500812530517578
+    }
+  }
+}
